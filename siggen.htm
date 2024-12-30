@@ -5,10 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<link rel="stylesheet" href="bootstrap.min.css">
-	<!--link rel="stylesheet" href="https://www.sjcoe.net/menu.css"-->
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="menu.css">
+	<!--link rel="stylesheet" href="index.css"-->
 	<link rel="stylesheet" href="siggen.css">
-	<title>SJCOE - DP JPA</title>
+	<title>SJCOE - Signature Generator</title>
 </head>
 <body>
 	<div class="container">
@@ -40,14 +40,14 @@
 			signature += "<span class='address'>" + document.getElementById('address').value + "</span><br>";
 			signature += "<span class='phone'>" + document.getElementById('phone').value + "</span>&nbsp;|&nbsp;";
 			signature += "<span class='email'>" + document.getElementById('email').value + "</span><br>";
-			signature += "<span class='logo'><img src='../images/SJCOE_signature_260x78.png'></span><br>";
+			signature += "<span class='logo'><img src='SJCOE_signature_260x78.png'></span><br>";
 			document.getElementById("signature").innerHTML = signature;
 			var text = signature;
 		}
 		</script>
 		<script src='jquery.min.js'></script>
 		<script src='bootstrap.min.js'></script>
-		<!--script src='https://www.sjcoe.net/menu.js'></script> <!-- // fix menu on small screens; must load after bootstrap -->
+		<script src='menu.js'></script> <!-- // fix menu on small screens; must load after bootstrap -->
 		<script src='index.js'></script>
 	</div>
 </body>
