@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="https://www.sjcoe.net/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.sjcoe.net/menu.css">
+	<link rel="stylesheet" href="https://www.sjcoe.net/index.css">
+	<link rel="stylesheet" href="https://www.sjcoe.net/siggen.css">
+	<title>SJCOE - DP JPA</title>
+</head>
+<body>
+	<div class="container">
+
+		<h1>SJCOE Signature Generator</h1>
+
+		<form id="form">
+			<p><span class='label'>Name:</span> <input type='text' id='name' size='50' value='FirstName LastName'></p>
+			<p><span class='label'>Title:</span> <input type='text' id='title' size='50' value='Position Title'></p>
+			<p><span class='label'>Department:</span> <input type='text' id='department' size='50' value='Department | Program'></p>
+			<p><span class='label'>Address:</span> <input type='text' id='address' size='50' value='Building Name:  1234 Transworld Drive, Stockton'></p>
+			<p><span class='label'>Phone:</span> <input type='text' id='phone' size='50' value='(209) 123-4567 '></p>
+			<p><span class='label'>Email:</span> <input type='text' id='email' size='50' value='username@sjcoe.net '></p>
+		</form>
+
+		<p><button class='button' onclick="myFunction()">Click to create my SJCOE Signature</button></p>
+
+		<div>
+		<div id="signature" class="signature">
+		</div>
+		</div>
+
+		<script>
+		function myFunction() {
+			var signature = "<span class='name'>" + document.getElementById('name').value.toUpperCase() + "</span><br>";
+			signature += "<span class='title'>" + document.getElementById('title').value + "</span><br>";
+			signature += "<span class='department'>" + document.getElementById('department').value + "</span><br>";
+			signature += "<span class='org'>San Joaquin County Office of Education</span><br>";
+			signature += "<span class='address'>" + document.getElementById('address').value + "</span><br>";
+			signature += "<span class='phone'>" + document.getElementById('phone').value + "</span>&nbsp;|&nbsp;";
+			signature += "<span class='email'>" + document.getElementById('email').value + "</span><br>";
+			signature += "<span class='logo'><img src='../images/SJCOE_signature_260x78.png'></span><br>";
+			document.getElementById("signature").innerHTML = signature;
+			var text = signature;
+		}
+		</script>
+		<script src='https://www.sjcoe.net/jquery.min.js'></script>
+		<script src='https://www.sjcoe.net/bootstrap.min.js'></script>
+		<script src='https://www.sjcoe.net/menu.js'></script> <!-- // fix menu on small screens; must load after bootstrap -->
+		<script src='https://www.sjcoe.net/index.js'></script>
+	</div>
+</body>
+</html>

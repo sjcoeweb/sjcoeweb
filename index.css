@@ -1,0 +1,140 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Calibri, Verdana, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:19.0pt;
+	font-size:12.0pt;
+}
+body {
+	margin: auto;
+	max-width: 1024px;
+	color:#727272;
+	background-image: url('https://www.sjcoe.net/images/Gradient_BG.png');
+	}
+.header {
+	background: #055490;
+	text-align: center;
+}
+.header img {
+	margin: auto;
+	padding: 1em;
+	display: block;
+}
+.container {
+	padding: 1em;
+	width: 100%;
+	background-color: white;
+	-webkit-overflow-scrolling: touch !important;
+	}
+a:link, a:active, a:visited {
+	text-decoration: underline;
+}
+a.internal:link, a.internal:active, a.internal:visited {
+	color: #de1633;
+}
+.article {
+	padding-top: 1em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #FFCCCC
+}
+.article img {
+	margin-bottom: 1em;
+}
+.article .meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+h1 {
+	line-height:19.0pt;
+	font-size:19.0pt;
+	font-family: Verdana, sans-serif;
+	color:#59CCE0;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+h1 a {
+	line-height:19.0pt;
+	font-size:19.0pt;
+	font-family: Verdana, sans-serif;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+h2 {
+	line-height:16.0pt;
+	font-size:16.0pt;
+	font-variant: small-caps;
+	font-weight:bold;
+}
+h2 a {
+	line-height:16.0pt;
+	font-size:16.0pt;
+	font-family: Verdana, sans-serif;
+	font-weight:bold;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/*
+.footer {
+	padding: 0.5em;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: #333333;
+	text-transform: uppercase;
+}
+.footer a:link, .footer a:active, .footer a:visited {
+	color: white;
+}
+.footer .moto {
+	padding-top:15px;
+	font-size:20px;
+	font-weight:bold;
+}
+.footer .addressLine {
+	padding-top:10px;
+	font-size:12px;
+}
+*/
+.footer {
+	padding: 1em;
+	width: 100%;
+	text-align: center;
+	background-color: #333333;
+}
+.footerlogo {
+	padding:10px;
+	font-weight:bold;
+	background-color: white;
+}
+.footer img {
+	max-width:50%;
+}
+/* MEDIA QUERIES*/
+@media all and (max-width: 1024px) {
+	h1 { font-size: 1.25em; }
+
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+	h1 { font-size: 1.1em; }
+	h2 { font-size: 1.4em; }
+}
+
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+	h1 { font-size: 0.9em; }
+	h2 { font-size: 1.1em; }
+}
+
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+	h1 { font-size: 0.8em; margin-left: 0; }
+	h2 { font-size: 1em; margin-left: 0; }
+	.nav-menu h3 { font-size: 0.7em; }
+}
